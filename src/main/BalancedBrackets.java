@@ -1,6 +1,5 @@
 package main;
 
-
 public class BalancedBrackets {
     /**
      * The function BalancedBrackets should return true if and only if
@@ -26,7 +25,7 @@ public class BalancedBrackets {
         for (char ch : str.toCharArray()) {
             if (ch == '[') {
                 brackets++;
-            } else if (ch == ']') {
+            } else if (ch == ']' && (brackets % 2 == 1)) {
                 brackets--;
             }
         }
